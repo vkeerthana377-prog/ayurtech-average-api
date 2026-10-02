@@ -12,7 +12,7 @@ export function calculateAverage(req, res) {
 
   if (typeof number !== "number" || !Number.isFinite(number)) {
     return res.status(400).json({
-      error: "number must be a finite number"
+      error: "Number must be a finite number"
     });
   }
 

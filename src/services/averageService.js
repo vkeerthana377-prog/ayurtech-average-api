@@ -2,10 +2,10 @@ let total = 0;
 let count = 0;
 
 /**
- * Adds a number to the running total and returns the current average.
+ * Adds a number to the running total and calculates the average.
  *
- * @param {number} number - The number to add.
- * @returns {number} The average of all numbers added so far.
+ * @param {number} number - The number received from the API request.
+ * @returns {number} The average of all numbers received so far.
  */
 export function addNumber(number) {
   total += number;
@@ -15,7 +15,9 @@ export function addNumber(number) {
 }
 
 /**
- * Resets the running average state.
+ * Resets the stored numbers.
+ *
+ * This function is used by automated tests.
  *
  * @returns {void}
  */
