@@ -1,5 +1,12 @@
 import { addNumber } from "../services/averageService.js";
 
+/**
+ * Handles POST /average requests.
+ *
+ * @param {import("express").Request} req - Express request object.
+ * @param {import("express").Response} res - Express response object.
+ * @returns {void}
+ */
 export function calculateAverage(req, res) {
   const { number } = req.body;
 
