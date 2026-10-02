@@ -13,3 +13,13 @@ export function addNumber(number) {
 
   return total / count;
 }
+
+/**
+ * Resets the running average state.
+ *
+ * @returns {void}
+ */
+export function resetAverage() {
+  total = 0;
+  count = 0;
+}
